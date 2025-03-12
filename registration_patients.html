@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Registration</title>
+  <link href="stylesheet_registration_patients.css" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Raleway" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <p><a href="index.html"><img src="images/logo.svg" alt="company logo" class="logo"></a></p>
+    <p class="nav_item"><a href="appointment_site.html">Appointments</a></p>
+    <p class="nav_item"> <a href="registration.html">Registration</a></p>
+    <p class="nav_item"><a href="login.html">Log In</a></p>
+  </nav>
+
+  <main class="mainForm">
+    <div class="registration">
+
+      <h1>Registration</h1>
+      <form action="/action_page.php" method="get" id="form1">
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="firstName" class="labels">First Name</label><br>
+            <input id="firstName" type="text" required><br>
+          </div>
+
+
+          <div class="form_class">
+            <label for="lastName">Last Name</label><br>
+            <input id="lastName" type="text" required><br>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="email">Email</label><br>
+            <input id="email" type="email" required><br>
+          </div>
+
+
+          <div class="form_class">
+            <label for="phone_number">Phone Number</label><br>
+            <input id="phone_number" type="tel" required placeholder="123-45-678"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="birthday">Birthday</label><br>
+            <input id="birthday" type="date" required><br>
+          </div>
+
+          <div class="form_class">
+            <label for="insurance">Insurance</label><br>
+            <input id="insurance" type="text" required><br>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="password">Password</label><br>
+            <input id="password" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+          </div>
+
+          <div class="form_class">
+            <label for="confirmPassword">Confirm Password</label><br>
+            <input id="confirmPassword" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+          </div>
+        </div>
+
+        
+        <div class="form_class">
+          <div class="checkboxInput">
+            <input id="checkbox" type="checkbox" required class="inputInLine">
+            <label for="checkbox" class="checkboxInLine">I agree to the terms and conditions</label><br>
+          </div>
+        </div>
+        
+
+        <div class="buttonSection">
+          <label for="submit"></label>
+          <button id="submit" type="submit" class="submitButton" form="form1" value="Submit">Submit</button>
+
+          <label for="cancel"></label>
+          <button id="cancel" type="reset" class="cancelButton">Cancel</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+
+
+
+
+</body>
+
+</html>
